@@ -1,0 +1,214 @@
+
+package javaapplication184;
+
+
+public class JavaApplication184 {
+
+ 
+    public static void main(String[] args) {
+      
+        int n[]={9,23,21,90,13};
+        int i;
+        for(i=0;i<=n.length-1;i++){
+            if(n[i]%2==0){
+                System.out.println(n[i]);
+            }
+        }
+      
+      
+       
+       
+    }
+    
+}
+
+
+=======================================================
+
+
+package javaapplication184;
+
+
+public class JavaApplication184 {
+
+ 
+    public static void main(String[] args) {
+      
+        int n[]={9,23,21,90,132};
+        int max=n[0],i;
+        for(i=1;i<=n.length-1;i++){
+           if(max<n[i]){
+               max=n[i];
+           }
+        }
+        System.out.println(max);
+      
+      
+       
+       
+    }
+    
+}
+
+
+=================================================================
+
+package javaapplication184;
+
+
+public class JavaApplication184 {
+
+ 
+    public static void main(String[] args) {
+      
+        int n[]={9,23,21,90,132};
+        int i,j;
+        for(i=1;i<=n.length-1;i++){
+           for(j=2;j<=n[i]/2;j++){
+               if(n[i]%j==0)
+               {
+                   break;
+               }
+           }
+           if(n[i]%j!=0){
+               System.out.println(n[i]);
+           }
+        }
+       
+      
+      
+       
+       
+    }
+    
+}
+
+====================================================================================
+
+package javaapplication184;
+
+
+public class JavaApplication184 {
+
+ 
+    public static void main(String[] args) {
+      
+        int n[]={23,43,9};
+        int i,j,temp;
+        for(i=0;i<=n.length-1;i++){
+            for(j=i+1;j<=n.length-1;j++){
+            if(n[i]>n[j]){ 
+                temp=n[i];
+                n[i]=n[j];
+                n[j]=temp;
+                }
+            }
+        }
+     
+        for(i=0;i<=n.length-1;i++){
+            System.out.println(n[i]);
+        }
+      
+      
+       
+       
+    }
+    
+}
+
+
+===============================================
+
+
+
+package javaapplication184;
+
+
+public class JavaApplication184 {
+
+ 
+    public static void main(String[] args) {
+      
+      String name[]={"shivam,8000,GGN","madhav,14000,Delhi","sadhvi,20000,GGN"};
+      for(String s : name){
+         String []part=s.split(",");
+         System.out.println(part[0]);
+      }
+       
+       
+    }
+    
+}
+
+
+==================================================================================
+
+
+package javaapplication184;
+
+
+public class JavaApplication184 {
+
+ 
+    public static void main(String[] args) {
+      
+      String name[]={"shivam,7000,GGN","madhav,14000,Delhi","sadhvi,20000,GGN"};
+      int sum=0;
+      float avg=0.0f;
+      for(String s : name){
+         String []part=s.split(",");
+         int sal=Integer.parseInt(part[1]);
+         sum +=sal;
+      }
+      
+      avg=sum/3.0f;
+      System.out.println(avg);
+       
+       
+    }
+    
+}
+
+
+===========================================================================================
+
+
+package javaapplication184;
+
+
+public class JavaApplication184 {
+
+ 
+    public static void main(String[] args) {
+      
+      String name[]={"shivam,7000,GGN","madhav,14000,Delhi","sadhvi,20000,GGN"};
+     
+      for(String s : name){
+         String []part=s.split(",");
+        String city=part[2];
+        if(city.equals("GGN")){
+            System.out.println(s);
+        }
+     
+      }
+      
+     
+       
+       
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
